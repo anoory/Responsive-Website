@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 1440px;
+  height: 810px;
+}
+.container {
+  box-sizing: border-box;
+  overflow: hidden;
+} /*-----------------Mobile - Logo------------------*/
+.three-dots {
+  width: 50px;
+  cursor: pointer;
+  margin-top: 62px;
+  margin-left: 170px;
+  display: none;
+}
+/*-----------------------------------*/
+
+/*------------------- 768 - SCREEN Navigation-Bar------------------------------------*/
+.list-2 {
+  flex: 1;
+  margin-top: 68px;
+  margin-left: 240px;
+  display: flex;
+  display: none;
+}
+/*-------------------------------------------------------*/
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+  margin-top: 62px;
+  margin-left: 142px;
+}
+
+nav {
+  flex: 1;
+  text-align: left;
+  margin-top: 68px;
+  margin-left: 157px;
+  display: flex;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 16px;
+  margin-right: 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #242635;
+}
+
+nav ul li a:hover {
+  color: chartreuse;
+}
+.heading {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 90px;
+  margin-top: 145px;
+  margin-left: 136px;
+}
+.Paragraph {
+  font-family: "Source Sans 3", sans-serif;
+  width: 410px;
+  font-size: 22px;
+  margin-top: 64px;
+  margin-left: 136px;
+}
+.Body-Image {
+  margin-top: -390px;
+  margin-left: 720px;
+  overflow: hidden;
+}
+
+/*--------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+  .container {
+  }
+
+  nav {
+    display: none;
+  }
+  .list-2 {
+    display: block;
+    margin-left: 320px;
+  }
+  .heading {
+    display: flex;
+    margin-left: 240px;
+    font-size: 72px;
+  }
+  .Paragraph {
+    margin-left: 90px;
+    text-align: center;
+    width: 600px;
+  }
+  .logo {
+    margin-left: 75px;
+  }
+  .Body-Image {
+    width: 617px;
+    height: 512px;
+    margin-left: 75px;
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .container {
+  }
+
+  .logo {
+    margin-left: 30px;
+  }
+  nav {
+    display: none;
+  }
+  .list-2 {
+    display: block;
+    margin-left: 320px;
+    display: none;
+  }
+  .three-dots {
+    display: block;
+    margin-left: 155px;
+  }
+  .heading {
+    display: flex;
+    margin-left: 105px;
+    font-size: 26px;
+  }
+  .Paragraph {
+    margin-left: 50px;
+    text-align: center;
+    font-size: 12px;
+    width: 220px;
+    margin-top: 20px;
+  }
+  .Body-Image {
+    width: 256px;
+    height: 512px;
+    margin-left: 32px;
+    margin-top: 40px;
+    overflow: hidden;
+  }
+}
