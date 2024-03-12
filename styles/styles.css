@@ -9,7 +9,8 @@ body {
 .container {
   box-sizing: border-box;
   overflow: hidden;
-} /*-----------------Mobile - Logo------------------*/
+}
+/*-----------------Mobile - Logo------------------*/
 .three-dots {
   width: 50px;
   cursor: pointer;
@@ -87,10 +88,7 @@ nav ul li a:hover {
 }
 
 /*--------------------------------------------------*/
-@media only screen and (max-width: 768px) {
-  .container {
-  }
-
+@media screen and (max-width: 768px) {
   nav {
     display: none;
   }
@@ -118,10 +116,7 @@ nav ul li a:hover {
     margin-top: 40px;
   }
 }
-@media only screen and (max-width: 320px) {
-  .container {
-  }
-
+@media screen and (max-width: 576px) {
   .logo {
     margin-left: 30px;
   }
@@ -135,24 +130,25 @@ nav ul li a:hover {
   }
   .three-dots {
     display: block;
-    margin-left: 155px;
+    margin-left: 310px;
   }
   .heading {
     display: flex;
-    margin-left: 105px;
+    text-align: center;
+    margin-left: 200px;
     font-size: 26px;
   }
   .Paragraph {
-    margin-left: 50px;
+    margin-left: 140px;
     text-align: center;
     font-size: 12px;
     width: 220px;
     margin-top: 20px;
   }
   .Body-Image {
-    width: 256px;
+    width: 390px;
     height: 512px;
-    margin-left: 32px;
+    margin-left: 50px;
     margin-top: 40px;
     overflow: hidden;
   }
