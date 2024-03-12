@@ -10,14 +10,22 @@ body {
   box-sizing: border-box;
   overflow: hidden;
 }
-/*-----------------Mobile - Logo------------------*/
-.three-dots {
+.fa-ellipsis {
   width: 50px;
   cursor: pointer;
   margin-top: 62px;
   margin-left: 170px;
   display: none;
 }
+/*-----------------Mobile - Logo------------------*/
+/*.three-dots {
+  width: 50px;
+  cursor: pointer;
+  margin-top: 62px;
+  margin-left: 170px;
+  display: none;
+}
+*/
 /*-----------------------------------*/
 
 /*------------------- 768 - SCREEN Navigation-Bar------------------------------------*/
@@ -128,7 +136,7 @@ nav ul li a:hover {
     margin-left: 320px;
     display: none;
   }
-  .three-dots {
+  .fa-ellipsis {
     display: block;
     margin-left: 310px;
   }
