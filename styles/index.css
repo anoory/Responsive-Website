@@ -1,0 +1,141 @@
+.container {
+  position: relative;
+  max-width: 1152px;
+  width: 100%;
+  min-height: auto;
+  margin: auto;
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+}
+.navbar {
+  display: flex;
+  gap: 100px;
+}
+
+.navbar img.logo {
+  height: 30px;
+  width: 70px;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+}
+ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+ul li {
+  display: flex;
+  margin-right: 40px;
+  cursor: pointer;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 16px;
+}
+ul li:hover {
+  color: greenyellow;
+}
+.Menu-bar2 {
+  display: none;
+}
+.fa-ellipsis {
+  width: 50px;
+  cursor: pointer;
+  display: none;
+}
+.body-container {
+  margin-top: 40px;
+  padding-top: 40px;
+}
+.body-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 90px;
+}
+.body-paragraph {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 22px;
+}
+
+.body-image {
+  max-width: 576px;
+  width: 100%;
+  min-height: 576px;
+  align-self: flex-start;
+  position: absolute;
+  top: 19px;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    align-items: center;
+  }
+  .Menu-bar1 {
+    display: none;
+  }
+
+  .logo {
+    padding-left: 50px;
+    height: 25px;
+  }
+  .Menu-bar2 {
+    display: block;
+    margin-left: 50px;
+    padding-left: 50px;
+  }
+  .body-heading {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 72px;
+  }
+  .body-paragraph {
+    text-align: center;
+  }
+  .body-image {
+    display: block;
+    position: static;
+    align-items: center;
+    max-width: 617px;
+    min-height: 512px;
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    align-items: center;
+  }
+  .Menu-bar2 {
+    display: none;
+  }
+  .logo {
+    align-self: flex-start;
+    margin-right: 50px;
+    padding-right: 50px;
+    width: 26px;
+    height: 50px;
+  }
+  .fa-ellipsis {
+    display: block;
+  }
+  .body-heading {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+  }
+  .body-paragraph {
+    text-align: center;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 16px;
+  }
+  .body-image {
+    max-width: 385px;
+    width: 100%;
+    min-height: 284px;
+  }
+}
